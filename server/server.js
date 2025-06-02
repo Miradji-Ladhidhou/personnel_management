@@ -8,10 +8,10 @@ const { connectDB } = require('./config/db');
 const Employe = require('./models/employe.model');
 Employe.sync({ alter: true }) // Synchroniser le modèle avec la base de données
   .then(() => {
-    console.log('Modèle Employe synchronisé avec succès.');
+    console.log('Modèle staff synchronisé avec succès.');
   })
   .catch((error) => {
-    console.error('Erreur lors de la synchronisation du modèle Employe:', error);
+    console.error('Erreur lors de la synchronisation du modèle staff:', error);
   });
 
 const app = express();
